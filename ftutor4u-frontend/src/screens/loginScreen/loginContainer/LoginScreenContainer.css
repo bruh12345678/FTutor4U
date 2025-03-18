@@ -1,0 +1,165 @@
+/* General Styles */
+.login-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.smaller_container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left Side - Login Form */
+.left {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Input Fields */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #5fa8d3;
+    outline: none;
+}
+
+/* Buttons */
+.sign-in-button {
+    width: 100%;
+    background: #5fa8d3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.sign-in-button:hover {
+    background: #4a90e2;
+}
+
+/* OR Divider */
+.or-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+    margin: 0 10px;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Google Login Container */
+.google-login-container {
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Right Side - Signup Section */
+.right {
+    width: 40%;
+    background: linear-gradient(135deg, #5fa8d3, #9fd3c7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.right h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.signup-button {
+    background: white;
+    color: #5fa8d3;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.signup-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-buttons {
+        justify-content: center;
+    }
+}

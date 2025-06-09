@@ -1,0 +1,219 @@
+.tutor-card-modern {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-left: 4px solid #10b981;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tutor-card-modern:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+.card-header-modern {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card-title-modern {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.card-badge {
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-content-modern {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card-info-grid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  width: 100%;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.info-item-modern {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f9fafb;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-item-modern:hover {
+  background: #f3f4f6;
+}
+
+.info-icon {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+  word-wrap: break-word;
+}
+
+.info-label-modern {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.info-value {
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.price-item {
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  border: 1px solid #d1fae5;
+}
+
+.price-amount-modern {
+  font-size: 16px;
+  font-weight: 700;
+  color: #10b981;
+  white-space: nowrap;
+}
+
+.subject-badge-container {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.subject-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ede9fe;
+  color: #7c3aed;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #ddd6fe;
+  white-space: nowrap;
+}
+
+.card-actions-modern {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+
+.take-class-btn-modern {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+  white-space: nowrap;
+}
+
+.take-class-btn-modern:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+  transform: translateY(-1px);
+}
+
+.take-class-btn-modern:active {
+  transform: translateY(0);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card-content-modern {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-actions-modern {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .take-class-btn-modern {
+    width: 100%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-badge {
+    align-self: flex-start;
+  }
+}

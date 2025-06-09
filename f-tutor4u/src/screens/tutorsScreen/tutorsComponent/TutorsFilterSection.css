@@ -1,0 +1,117 @@
+.tutors-filter-section {
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    padding: 32px 0;
+    border-bottom: 1px solid #d1d5db;
+  }
+  
+  .filter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .filter-form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .filter-input,
+  .filter-select {
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 160px;
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-input:focus,
+  .filter-select:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  }
+  
+  .filter-select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+  }
+  
+  .filter-input:hover,
+  .filter-select:hover {
+    border-color: #d1d5db;
+  }
+  
+  .filter-search-btn {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+    font-family: system-ui, -apple-system, sans-serif;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-search-btn:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+    transform: translateY(-1px);
+  }
+  
+  .filter-search-btn:active {
+    transform: translateY(0);
+  }
+  
+  .search-icon {
+    font-size: 16px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .tutors-filter-section {
+      padding: 24px 0;
+    }
+  
+    .filter-form {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .filter-input,
+    .filter-select,
+    .filter-search-btn {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .filter-container {
+      padding: 0 16px;
+    }
+  
+    .filter-input,
+    .filter-select,
+    .filter-search-btn {
+      max-width: none;
+    }
+  }
+  

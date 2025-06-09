@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import "./pagination.css"
+import "./Pagination.css"
 
 interface PaginationProps {
   currentPage: number

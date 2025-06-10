@@ -1,10 +1,9 @@
 "use client"
 
 import "./TutorCard.css"
-import { useState } from "react"
 import type React from "react"
+import { useState } from "react"
 import SuccessPopup from "../../../../core/component/successPopUp/SuccessPopUp"
-
 interface TutorCardProps {
   id: string
   subject: string
@@ -28,10 +27,7 @@ export default function TutorCard({
   tutorCount,
   address,
   timeSlots,
-  onTakeClass,
 }: TutorCardProps) {
-  const [showSuccessPopup, setShowSuccessPopup] = useState(false)
-
   const cardStyle: React.CSSProperties = {
     backgroundColor: "white",
     borderRadius: "12px",
@@ -196,11 +192,7 @@ export default function TutorCard({
     whiteSpace: "nowrap",
     marginTop: "8px",
   }
-
-  const handleTakeClass = () => {
-    onTakeClass(id)
-    setShowSuccessPopup(true)
-  }
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false)
 
   return (
     <div style={cardStyle}>
@@ -268,7 +260,7 @@ export default function TutorCard({
         </div>
 
         <div style={actionsStyle}>
-          <button style={buttonStyle} onClick={handleTakeClass}>
+          <button style={buttonStyle} onClick={() => setShowSuccessPopup(true)}>
             Nhận lớp ngay
           </button>
         </div>

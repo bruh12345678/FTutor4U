@@ -137,19 +137,19 @@ export default function LoginDialogContainer({ isOpen, onClose, onLoginSuccess }
       await new Promise((resolve) => setTimeout(resolve, 1500))
 
       // Mock login validation
-      if (loginData.email === "admin@example.com" && loginData.password === "123456") {
+      if (loginData.email === "lamadmin@gmail.com" && loginData.password === "123456") {
         const user = {
           id: "1",
-          name: "Admin User",
+          name: "Lâm",
           email: loginData.email,
           userType: "admin",
         }
         onLoginSuccess(user)
         handleClose()
-      } else if (loginData.email === "student@example.com" && loginData.password === "123456") {
+      } else if (loginData.email === "nhattmhe182558@fpt.edu.vn" && loginData.password === "123456") {
         const user = {
           id: "2",
-          name: "Student User",
+          name: "Minh Nhật",
           email: loginData.email,
           userType: "student",
         }

@@ -54,8 +54,8 @@ const NewClassScreenContainer: React.FC = () => {
   }, [])
 
   const headerData = {
-    phoneNumber: "0987654321-123456789",
-    email: "tutor@gmail.com",
+    phoneNumber: "0329957052",
+    email: "tutor4u@gmail.com",
     isLoggedIn,
     onLogin: () => setIsLoggedIn(!isLoggedIn),
   }

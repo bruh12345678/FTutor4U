@@ -4,6 +4,15 @@ import { useState, useEffect } from "react"
 import TutorsScreen, { type FilterOptions } from "./TutorsScreen/TutorsScreen"
 import type { TutorData } from "./tutorsComponent/TutorsCardGrid"
 
+import doNgocMinhAvatar from "../../assets/do_ngoc_minh_avatar.jpg";
+import doanThiMoAvatar from "../../assets/doan_thi_mo_avatar.jpg";
+import kieuBaoTramAvatar from "../../assets/kieu_bao_tram_avatar.jpg";
+import leThiThuThanhAvatar from "../../assets/le_thi_thu_thanh_avatar.jpg";
+import nguyenDucVuAvatar from "../../assets/nguyen_duc_vu_avatar.jpg";
+import nguyenHuuDuyAvatar from "../../assets/nguyen_huu_duy_avatar.jpg";
+import nguyenThuThuyAvatar from "../../assets/nguyen_thu_thuy_avatar.jpg";
+import vuongTieuMiAvatar from "../../assets/vuong_tieu_mi_avatar.jpg";
+
 export default function TutorsPage() {
     const [tutors, setTutors] = useState<TutorData[]>([])
     const [filteredTutors, setFilteredTutors] = useState<TutorData[]>([])
@@ -60,7 +69,7 @@ export default function TutorsPage() {
             {
               id: "1",
               name: "Đỗ Ngọc Minh",
-              avatar: "../../../src/assets/do_ngoc_minh_avatar.jpg",
+              avatar: doNgocMinhAvatar,
               location: "Cổ Đông, Sơn Tây, Hà Nội",
               educationLevel: "Sinh viên",
               subjects: ["MAS", "MAD", "DAP", "SWP", "PFP"],
@@ -68,7 +77,7 @@ export default function TutorsPage() {
             {
               id: "2",
               name: "Đoàn Thị Mơ",
-              avatar: "../../../src/assets/doan_thi_mo_avatar.jpg",
+              avatar: doanThiMoAvatar,
               location: "Hà Nội",
               educationLevel: "Sinh viên",
               subjects: ["FIN", "MKT"],
@@ -76,7 +85,7 @@ export default function TutorsPage() {
             {
               id: "3",
               name: "Kiều Bảo Trâm",
-              avatar: "../../../src/assets/kieu_bao_tram_avatar.jpg",
+              avatar: kieuBaoTramAvatar,
               location: "Hà Nội",
               educationLevel: "Sinh viên",
               subjects: ["JPN", "MLN"],
@@ -84,7 +93,7 @@ export default function TutorsPage() {
             {
               id: "4",
               name: "Lê Thị Thu Thanh",
-              avatar: "../../../src/assets/le_thi_thu_thanh_avatar.jpg",
+              avatar: leThiThuThanhAvatar,
               location: "Mục Uyên, Tân Xã, Hà Nội",
               educationLevel: "Sinh viên",
               subjects: ["DPL", "NLP"],
@@ -92,7 +101,7 @@ export default function TutorsPage() {
             {
               id: "5",
               name: "Nguyễn Đức Vũ",
-              avatar: "../../../src/assets/nguyen_duc_vu_avatar.jpg",
+              avatar: nguyenDucVuAvatar,
               location: "Thạch Thất, Hà Nội",
               educationLevel: "Cử nhân",
               subjects: ["MAD", "PRJ", "SWR"],
@@ -100,7 +109,7 @@ export default function TutorsPage() {
             {
               id: "6",
               name: "Nguyễn Hữu Duy",
-              avatar: "../../../src/assets/nguyen_huu_duy_avatar.jpg",
+              avatar: nguyenHuuDuyAvatar,
               location: "Hòa Lạc, Hà Nội",
               educationLevel: "Thạc sĩ",
               subjects: ["PRJ", "SWP", "DBI"],
@@ -108,7 +117,7 @@ export default function TutorsPage() {
             {
               id: "7",
               name: "Nguyễn Thu Thuỷ",
-              avatar: "../../../src/assets/nguyen_thu_thuy_avatar.jpg",
+              avatar: nguyenThuThuyAvatar,
               location: "Hà Nội",
               educationLevel: "Giảng viên",
               subjects: ["MAE", "PRF", "CSI"],
@@ -116,12 +125,12 @@ export default function TutorsPage() {
             {
               id: "8",
               name: "Vương Tiểu Mi",
-              avatar: "../../../src/assets/vuong_tieu_mi_avatar.jpg",
+              avatar: vuongTieuMiAvatar,
               location: "Cổ Đông, Sơn Tây, Hà Nội",
               educationLevel: "Sinh viên",
               subjects: ["CSD", "DBI", "PRN"],
             },
-          ]
+          ];
   
           setTutors(mockTutors)
           setFilteredTutors(mockTutors)

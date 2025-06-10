@@ -1,7 +1,7 @@
 
   export const navigationData = {
-    phoneNumber: "0987654321",
-    email: "tutor@gmail.com",
+    phoneNumber: "032957052",
+    email: "tutor4u@gmail.com",
     menuItems: [
       { label: "Trang chủ", path: "/landing" },
       { label: "Lớp mới", path: "/new-class" },

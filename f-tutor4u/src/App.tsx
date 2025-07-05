@@ -12,6 +12,7 @@ import TutorsPage from "./screens/tutorsScreen/TutorPage";
 import StudentInformContainer from "./screens/studentInformScreen/studentInformContainer/StudentInformContainer";
 import TutorInformContainer from "./screens/tutorInformScreen/tutorInformContainer/TutorInformContainer";
 import ApplicationStatusScreen from "./screens/applicationStatusScreen/applicationStatusScreen/applicationStatusScreen";
+import AdminDashboardPage from "./screens/dashboardScreen/dashboardScreen"
 
 import { navigationData } from "./core/const/Const";
 function App() {
@@ -52,6 +53,9 @@ function App() {
           <Route path="/student-inform" element={<StudentInformContainer />} />
           <Route path="/tutor-inform" element={<TutorInformContainer />} />
           <Route path="/application-status" element={<ApplicationStatusScreen />} />
+          <Route path="/admin-dashboard" element={<AdminDashboardPage       
+          onLogout={handleLogout}
+          userName={user?.name || ""}/>} />
         </Routes>
       </Suspense>
     </>

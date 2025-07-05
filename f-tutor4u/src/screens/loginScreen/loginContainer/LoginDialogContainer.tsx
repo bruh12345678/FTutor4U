@@ -155,6 +155,16 @@ export default function LoginDialogContainer({ isOpen, onClose, onLoginSuccess }
         }
         onLoginSuccess(user)
         handleClose()
+      }
+        else if (loginData.email === "admin@" && loginData.password === "123456") {
+          const user = {
+            id: "3",
+            name: "Minh Nhật",
+            email: loginData.email,
+            userType: "admin",
+          }
+          onLoginSuccess(user)
+          handleClose()
       } else {
         setErrors({ general: "Email hoặc mật khẩu không đúng" })
       }

@@ -38,10 +38,10 @@ interface AIConnectPageProps {
   userLocation?: { lat: number; lng: number; address: string }
 }
 
-export default function AIConnectPage({ userLocation }: AIConnectPageProps) {
+export default function AIConnectPage({}: AIConnectPageProps) {
   const [currentTutor, setCurrentTutor] = useState<TutorMatch | null>(null)
   const [isLoading, setIsLoading] = useState(true)
-  const [userPreferences, setUserPreferences] = useState<UserPreferences>({
+  const [userPreferences] = useState<UserPreferences>({
     subject: "SWP",
     location: "Hòa Lạc, Hà Nội",
     budget: "1000000-1500000",

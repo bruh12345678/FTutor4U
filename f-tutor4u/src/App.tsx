@@ -15,6 +15,10 @@ import ApplicationStatusScreen from "./screens/applicationStatusScreen/applicati
 import AdminDashboardPage from "./screens/dashboardScreen/dashboardScreen"
 
 import { navigationData } from "./core/const/Const";
+
+import PromotionPageContainer from "./app/promotion-page"
+import AIConnectPageContainer from "./app/ai-connect-page"
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [user, setUser] = useState<any>(null)
@@ -56,6 +60,8 @@ function App() {
           <Route path="/admin-dashboard" element={<AdminDashboardPage       
           onLogout={handleLogout}
           userName={user?.name || ""}/>} />
+          <Route path="/promotion" element={<PromotionPageContainer />} />
+          <Route path="/AI-connect" element={<AIConnectPageContainer />} />
         </Routes>
       </Suspense>
     </>

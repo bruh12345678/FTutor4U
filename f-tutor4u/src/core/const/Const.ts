@@ -9,6 +9,8 @@
       { label: "Tìm gia sư", path: "/find-tutor" },
       { label: "Đăng ký làm gia sư", path: "/register-tutor" },
       { label: "Hàng chờ", path: "/application-status" },
+      { label: "Ưu đãi", path: "/promotion" },
+      { label: "Kết nối bằng AI!", path: "/AI-connect" },
     ],
     
   }

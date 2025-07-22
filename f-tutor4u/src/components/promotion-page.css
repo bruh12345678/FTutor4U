@@ -1,0 +1,338 @@
+.promotion-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .promotion-header {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+    color: white;
+    padding: 48px 32px;
+    text-align: center;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .promotion-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+  }
+  
+  .promotion-subtitle {
+    font-size: 18px;
+    margin: 0 0 32px 0;
+    opacity: 0.9;
+  }
+  
+  .activity-tracker {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .activity-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .stat-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .stat-label {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .promotions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 32px;
+  }
+  
+  .promotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  
+  .promotion-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .promotion-card.available {
+    border-color: #10b981;
+    box-shadow: 0 8px 25px -5px rgba(16, 185, 129, 0.2);
+  }
+  
+  .promotion-card.available:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px -5px rgba(16, 185, 129, 0.3);
+  }
+  
+  .promotion-card.locked {
+    opacity: 0.7;
+    border-color: #e5e7eb;
+  }
+  
+  .promotion-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .promotion-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .promotion-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .lock-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+  }
+  
+  .promotion-content {
+    padding: 24px;
+  }
+  
+  .promotion-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 12px 0;
+  }
+  
+  .promotion-description {
+    color: #6b7280;
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+  }
+  
+  .promotion-validity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f59e0b;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  
+  .validity-icon {
+    font-size: 16px;
+  }
+  
+  .unlock-progress {
+    margin-bottom: 16px;
+  }
+  
+  .progress-info {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #059669);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+  
+  .promotion-actions {
+    margin-top: 20px;
+  }
+  
+  .promotion-btn {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .promotion-btn.available {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: white;
+    box-shadow: 0 2px 4px rgba(16, 185, 129, 0.2);
+  }
+  
+  .promotion-btn.available:hover {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+    transform: translateY(-1px);
+  }
+  
+  .promotion-btn.locked {
+    background: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .quick-navigation {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quick-navigation h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+  
+  .nav-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #f8fafc;
+    color: #1f2937;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .nav-link:hover {
+    background: #e2e8f0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .promotion-header {
+      padding: 32px 20px;
+    }
+  
+    .promotion-title {
+      font-size: 28px;
+    }
+  
+    .promotion-subtitle {
+      font-size: 16px;
+    }
+  
+    .activity-stats {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .promotions-container {
+      padding: 32px 20px;
+    }
+  
+    .promotions-grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  
+    .nav-links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links {
+      grid-template-columns: 1fr;
+    }
+  
+    .promotion-content {
+      padding: 20px;
+    }
+  
+    .quick-navigation {
+      padding: 24px;
+    }
+  }
+  
